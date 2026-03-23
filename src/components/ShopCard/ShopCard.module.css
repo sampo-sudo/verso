@@ -1,0 +1,49 @@
+.card {
+  display: flex;
+  align-items: center;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 14px 16px;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.15s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.info {
+  flex: 1;
+  min-width: 0;
+}
+
+.name {
+  font-weight: 700;
+  color: var(--navy);
+  font-size: 1.05rem;
+  margin: 0 0 4px 0;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+
+.distance {
+  color: var(--navy);
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.arrow {
+  font-size: 1.4rem;
+  color: var(--navy);
+  font-weight: bold;
+  margin-left: 12px;
+  flex-shrink: 0;
+}

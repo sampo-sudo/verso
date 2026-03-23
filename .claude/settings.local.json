@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(cd /tmp)",
+      "Bash(rm -rf verso-scaffold)",
+      "Bash(npm run:*)"
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+.container {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: var(--white);
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.infoButton {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--white);
+  font-size: 1.125rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+
+.section {
+  margin-bottom: 1.5rem;
+}
+
+.filterRow {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 0;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+.iconCircle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.filterLabel {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--navy);
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--navy);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.15s;
+}
+
+.checkbox.checked {
+  background: var(--navy);
+}
+
+.checkmark {
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.sectionLabel {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+}
+
+.priceRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.priceLabel {
+  font-size: 0.875rem;
+  color: var(--navy);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.rangeSlider {
+  flex: 1;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--gray);
+  outline: none;
+}
+
+.rangeSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--pink);
+  cursor: pointer;
+  border: 2px solid var(--white);
+  box-shadow: var(--shadow);
+}
+
+.rangeSlider::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--pink);
+  cursor: pointer;
+  border: 2px solid var(--white);
+  box-shadow: var(--shadow);
+}
+
+.starRow {
+  padding: 0.25rem 0;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 1rem 0;
+}

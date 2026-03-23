@@ -1,0 +1,120 @@
+[
+  {
+    "id": "moonan-myymala",
+    "name": "Moonan myymälä",
+    "priceLevel": 3,
+    "distance": "201m",
+    "distanceMeters": 201,
+    "rating": 4.7,
+    "ratingDistribution": { "5": 35, "4": 25, "3": 15, "2": 5, "1": 3 },
+    "certifications": ["vegan", "working", "finnish", "materials"],
+    "address": "Pikkukakkosen posti 347",
+    "coordinates": { "lat": 60.1699, "lng": 24.9384 },
+    "brands": ["haglofs", "reima", "veja", "ensenn", "luhta"],
+    "reviews": [
+      { "id": "r1", "author": "Maija Mehiläinen", "rating": 5, "text": "Tosi kiva kauppa, ikinä en oo näin hyvää palvelua saanut missään!\ud83d\ude01\ud83e\udea3\ud83d\udd25" },
+      { "id": "r2", "author": "Jussi Jänis", "rating": 4, "text": "Täältä löytyy parhaat kestävät farkut ja villapaidat \ud83d\ude0d\ud83d\ude0d\ud83d\udd25\ud83d\udd25" },
+      { "id": "r3", "author": "Roope Rotta", "rating": 4, "text": "Vähän kalliimpaa verrattuna samankaltaisiin myymälöihin, mutta sain ainakin mahtavaa palvelua ja olen hyvin tyytyväinen laadusta\u2764\ufe0f" },
+      { "id": "r4", "author": "Silja Susi", "rating": 3, "text": "Ihan ookoo..." }
+    ]
+  },
+  {
+    "id": "sofien-shoppi",
+    "name": "Sofien shoppi",
+    "priceLevel": 1,
+    "distance": "417m",
+    "distanceMeters": 417,
+    "rating": 3.8,
+    "ratingDistribution": { "5": 20, "4": 25, "3": 30, "2": 10, "1": 5 },
+    "certifications": ["vegan", "finnish"],
+    "address": "Urho Kekkosen polku 67",
+    "coordinates": { "lat": 60.1685, "lng": 24.9320 },
+    "brands": ["haglofs", "reima", "veja", "ensenn"],
+    "reviews": [
+      { "id": "r5", "author": "Arttu Ahma", "rating": 5, "text": "Paras kauppa ikinä!!\ud83d\ude0d\ud83d\ude0d Löysin mun unelmatakin täältä" },
+      { "id": "r6", "author": "Kiia Käärme", "rating": 4, "text": "Hyvä palvelu ja löytyy paljon suomalaisia tuotteita\ud83c\uddeb\ud83c\uddee" },
+      { "id": "r7", "author": "Noora Norsu", "rating": 3, "text": "Ihan ok hyvä kauppa, ei mitenkään ihmeellinen." },
+      { "id": "r8", "author": "Matti Mangusti", "rating": 2, "text": "Tää on vaan kalliimpi h&m..." }
+    ]
+  },
+  {
+    "id": "millan-marketti",
+    "name": "Millan marketti",
+    "priceLevel": 2,
+    "distance": "519m",
+    "distanceMeters": 519,
+    "rating": 4.9,
+    "ratingDistribution": { "5": 45, "4": 20, "3": 8, "2": 2, "1": 1 },
+    "certifications": ["finnish", "materials"],
+    "address": "Siin kelan takana u know",
+    "coordinates": { "lat": 60.1720, "lng": 24.9450 },
+    "brands": ["haglofs", "reima", "veja", "ensenn"],
+    "reviews": [
+      { "id": "r9", "author": "Timo Tikka", "rating": 5, "text": "Tosi kiva kauppa, ikinä en oo näin hyvää palvelua saanut missään!\ud83d\ude01\ud83e\udea3\ud83d\udd25" },
+      { "id": "r10", "author": "Aino Ankka", "rating": 5, "text": "Täältä löytyy parhaat kestävät vaatteet\ud83d\ude0d\ud83d\ude0d\ud83d\udd25\ud83d\udd25" },
+      { "id": "r11", "author": "Kiia Käärme", "rating": 5, "text": "Niin ihana myymälä!\u2764\ufe0f Hyvä palvelu ja löytyy paljon suomalaisia tuotteita\ud83c\uddeb\ud83c\uddee" },
+      { "id": "r12", "author": "Pekka Paviaani", "rating": 4, "text": "Housut täältä on kestänyt jo 50 vuotta" }
+    ]
+  },
+  {
+    "id": "sampon-sport",
+    "name": "Sampon sport",
+    "priceLevel": 5,
+    "distance": "536m",
+    "distanceMeters": 536,
+    "rating": 4.5,
+    "ratingDistribution": { "5": 30, "4": 20, "3": 10, "2": 3, "1": 2 },
+    "certifications": ["vegan", "working"],
+    "address": "Urheilukatu 22",
+    "coordinates": { "lat": 60.1740, "lng": 24.9290 },
+    "brands": ["haglofs", "reima", "veja", "ensenn"],
+    "reviews": [
+      { "id": "r13", "author": "Hanna Hamsteri", "rating": 5, "text": "Tosi kiva kauppa\ud83d\ude01\ud83e\udea3\ud83d\udd25" },
+      { "id": "r14", "author": "Kiia Käärme", "rating": 5, "text": "Täältä löytyy parhaat urheiluvaatteet\ud83d\ude0d\ud83d\ude0d\ud83d\udd25\ud83d\udd25" },
+      { "id": "r15", "author": "Kaija Käki", "rating": 5, "text": "Niin ihana myymälä!!!<3" },
+      { "id": "r16", "author": "Tiina Tiikeri", "rating": 3, "text": "Ihan ookoo..." },
+      { "id": "r17", "author": "Maija Mehiläinen", "rating": 5, "text": "Tosi kiva kauppa, ikinä en oo näin hyvää palvelua saanut missään!\ud83d\ude01\ud83e\udea3\ud83d\udd25" },
+      { "id": "r18", "author": "Jussi Jänis", "rating": 4, "text": "Täältä löytyy parhaat kestävät farkut ja villapaidat \ud83d\ude0d\ud83d\ude0d\ud83d\udd25\ud83d\udd25" },
+      { "id": "r19", "author": "Kiia Käärme", "rating": 4, "text": "Niin ihana myymälä!\u2764\ufe0f Hyvä palvelu ja löytyy paljon suomalaisia tuotteita\ud83c\uddeb\ud83c\uddee" },
+      { "id": "r20", "author": "Silja Susi", "rating": 3, "text": "Ihan ookoo..." }
+    ]
+  },
+  {
+    "id": "eken-nahkakauppa",
+    "name": "Eken nahkakauppa",
+    "priceLevel": 3,
+    "distance": "67km",
+    "distanceMeters": 67000,
+    "rating": 4.7,
+    "ratingDistribution": { "5": 35, "4": 25, "3": 15, "2": 5, "1": 3 },
+    "certifications": ["working", "finnish", "materials"],
+    "address": "Pikkukakkosen posti 347",
+    "coordinates": { "lat": 60.1660, "lng": 24.9410 },
+    "brands": ["haglofs", "reima", "veja", "ensenn"],
+    "reviews": [
+      { "id": "r21", "author": "Sun faija", "rating": 3, "text": "Omistaja jotenki vähän tärähtäny mutta hyvät nahkahousut sain kuitenkin..." },
+      { "id": "r22", "author": "Jussi Jänis", "rating": 5, "text": "Täältä löytyy parhaat kestävät farkut ja villapaidat \ud83d\ude0d\ud83d\ude0d\ud83d\udd25\ud83d\udd25" },
+      { "id": "r23", "author": "Roope Rotta", "rating": 4, "text": "Vähän kalliimpaa verrattuna samankaltaisiin myymälöihin, mutta sain ainakin mahtavaa palvelua ja olen hyvin tyytyväinen laadusta\u2764\ufe0f" },
+      { "id": "r24", "author": "Silja Susi", "rating": 3, "text": "Ihan ookoo..." }
+    ]
+  },
+  {
+    "id": "markuksen-puoti",
+    "name": "Markuksen puoti",
+    "priceLevel": 3,
+    "distance": "400m",
+    "distanceMeters": 400,
+    "rating": 4.7,
+    "ratingDistribution": { "5": 35, "4": 25, "3": 15, "2": 5, "1": 3 },
+    "certifications": ["vegan", "working", "finnish", "materials"],
+    "address": "Pikkukakkosen posti 347",
+    "coordinates": { "lat": 60.1710, "lng": 24.9350 },
+    "brands": ["haglofs", "reima", "veja", "ensenn"],
+    "reviews": [
+      { "id": "r25", "author": "Maija Mehiläinen", "rating": 5, "text": "Tosi kiva kauppa, ikinä en oo näin hyvää palvelua saanut missään!\ud83d\ude01\ud83e\udea3\ud83d\udd25" },
+      { "id": "r26", "author": "Jussi Jänis", "rating": 4, "text": "Täältä löytyy parhaat kestävät farkut ja villapaidat \ud83d\ude0d\ud83d\ude0d\ud83d\udd25\ud83d\udd25" },
+      { "id": "r27", "author": "Roope Rotta", "rating": 4, "text": "Vähän kalliimpaa verrattuna samankaltaisiin myymälöihin, mutta sain ainakin mahtavaa palvelua ja olen hyvin tyytyväinen laadusta\u2764\ufe0f" },
+      { "id": "r28", "author": "Silja Susi", "rating": 3, "text": "Ihan ookoo..." }
+    ]
+  }
+]

@@ -1,0 +1,27 @@
+.container {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.star {
+  color: var(--pink);
+  cursor: default;
+  user-select: none;
+}
+
+.interactive .star {
+  cursor: pointer;
+}
+
+.sm .star {
+  font-size: 0.95rem;
+}
+
+.md .star {
+  font-size: 1.5rem;
+}
+
+.empty {
+  opacity: 0.35;
+}

@@ -1,0 +1,23 @@
+.card {
+  background: var(--gray-light);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+}
+
+.author {
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0 0 4px 0;
+  font-size: 0.95rem;
+}
+
+.rating {
+  margin-bottom: 6px;
+}
+
+.text {
+  color: var(--navy);
+  font-size: 0.9rem;
+  line-height: 1.45;
+  margin: 0;
+}

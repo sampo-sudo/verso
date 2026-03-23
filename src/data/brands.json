@@ -1,0 +1,7 @@
+[
+  { "id": "haglofs", "name": "Haglöfs", "certifications": ["vegan", "working", "materials"] },
+  { "id": "reima", "name": "Reima", "certifications": ["working", "finnish", "materials"] },
+  { "id": "veja", "name": "Veja", "certifications": ["vegan", "working"] },
+  { "id": "ensenn", "name": "Ensenn", "certifications": ["vegan"] },
+  { "id": "luhta", "name": "Luhta", "certifications": ["vegan", "working", "finnish", "materials"] }
+]

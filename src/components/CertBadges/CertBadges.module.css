@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.badge {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sm {
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+}
+
+.md {
+  width: 40px;
+  height: 40px;
+  font-size: 1.1rem;
+}
+
+.lg {
+  width: 56px;
+  height: 56px;
+  font-size: 1.5rem;
+}
