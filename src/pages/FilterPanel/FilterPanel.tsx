@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import TopBar from "../../components/TopBar/TopBar";
-import BackButton from "../../components/BackButton/BackButton";
 import StarRating from "../../components/StarRating/StarRating";
 import { useFilters } from "../../context/FilterContext";
 import styles from "./FilterPanel.module.css";
@@ -41,7 +40,7 @@ export default function FilterPanel() {
     <div className={styles.container}>
       <div className={styles.topRow}>
         <TopBar
-          onFilterClick={() => {}}
+          onFilterClick={() => navigate(-1)}
           searchValue={filters.searchQuery}
           onSearchChange={handleSearchChange}
         />
@@ -107,10 +106,6 @@ export default function FilterPanel() {
             onChange={handleRatingChange}
           />
         </div>
-      </div>
-
-      <div className={styles.footer}>
-        <BackButton />
       </div>
     </div>
   );
