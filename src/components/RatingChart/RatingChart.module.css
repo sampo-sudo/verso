@@ -42,7 +42,7 @@
 
 .starContainer {
   display: flex;
-  align-items: center;
+  align-items: bottom;
   justify-content: center;
   flex-shrink: 0;
   position: relative;

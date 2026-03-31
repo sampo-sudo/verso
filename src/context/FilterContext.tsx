@@ -5,7 +5,7 @@ const defaultFilters: FilterState = {
   searchQuery: "",
   certifications: [],
   maxPrice: 5,
-  minRating: 0,
+  minRating: 1,
 };
 
 interface FilterContextType {

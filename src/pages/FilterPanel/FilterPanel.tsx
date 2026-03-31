@@ -80,7 +80,7 @@ export default function FilterPanel() {
       </div>
 
       <div className={styles.section}>
-        <div className={styles.sectionLabel}>Hintataso</div>
+        <div className={styles.sectionLabel}>Maksimi Hintataso</div>
         <div className={styles.priceRow}>
           <span className={styles.priceLabel}>€</span>
           <input

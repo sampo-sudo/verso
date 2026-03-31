@@ -30,7 +30,10 @@ export default function MapView() {
   const filteredShops = allShops.filter((shop) => {
     if (
       filters.searchQuery &&
-      !shop.name.toLowerCase().includes(filters.searchQuery.toLowerCase())
+      !shop.name.toLowerCase().includes(filters.searchQuery.toLowerCase()) ||
+      filters.certifications.some((cert) => !shop.certifications.includes(cert)) ||
+      !(shop.priceLevel <= filters.maxPrice) ||
+      !(shop.rating >= filters.minRating)
     ) {
       return false;
     }
