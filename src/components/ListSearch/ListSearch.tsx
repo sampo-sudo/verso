@@ -10,7 +10,7 @@ export default function ListSearch({ onFilterClick, searchValue, onSearchChange 
   return (
     <div className={styles.topBar}>
       <button className={styles.filterButton} onClick={onFilterClick} aria-label="Takaisin">
-        Suodata
+        ☰
       </button>
       <div className={styles.searchBar}>
         {!searchValue && (
