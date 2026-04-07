@@ -70,7 +70,7 @@
   align-items: top;
   justify-content: center;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 1.8rem;
   font-weight: 700;
   color: var(--navy);
   flex-shrink: 0;

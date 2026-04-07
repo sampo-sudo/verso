@@ -136,6 +136,7 @@ export default function FilterPanel() {
           />
         </div>
       </div>
+
       <div className={styles.section}>
         <div className={styles.sectionLabel}>Vaatekategoriat</div>
 
@@ -165,10 +166,10 @@ export default function FilterPanel() {
       <div className={styles.bottomWrapper}>
         <div className={styles.bottomContainer}>
           <button className={styles.clearButton} onClick={resetFilters} aria-label="Reset">
-            Reset Filters
+            Reset
           </button>
           <button className={styles.applyButton} onClick={() => navigate(-1)} aria-label="Apply">
-            Apply Filters
+            Apply
           </button>
         </div>
       </div>

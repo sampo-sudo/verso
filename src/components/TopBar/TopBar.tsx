@@ -13,7 +13,9 @@ export default function TopBar({ onFilterClick, searchValue, onSearchChange }: T
         &larr;
       </button>
       <div className={styles.searchBar}>
-        <span className={styles.searchIcon}>🔍</span>
+        {!searchValue && (
+          <span className={styles.searchIcon}>🔍</span>
+        )}
         <input
           className={styles.searchInput}
           type="text"

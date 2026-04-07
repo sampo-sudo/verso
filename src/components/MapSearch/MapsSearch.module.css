@@ -11,36 +11,6 @@
   gap: 10px;
 }
 
-.searchBar {
-  max-width: 430px;
-  flex: 1;
-  display: flex;
-  align-items: center;
-  background: var(--pink);
-  border-radius: 999px;
-  padding: 10px 16px;
-  gap: 8px;
-}
-
-.searchIcon {
-  font-size: 1.1rem;
-  flex-shrink: 0;
-}
-
-.searchInput {
-  flex: 1;
-  border: none;
-  background: transparent;
-  outline: none;
-  font-size: 1rem;
-  color: var(--navy);
-}
-
-.searchInput::placeholder {
-  color: var(--navy);
-  opacity: 0.6;
-}
-
 .searchButton {
   height: 44px;
   border-radius: 999px;
@@ -50,7 +20,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: #00285d;
   flex-shrink: 0;

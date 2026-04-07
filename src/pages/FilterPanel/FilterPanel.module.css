@@ -37,6 +37,8 @@
 .toggleSection {
   display: flex;
   gap: 0.5rem;
+  padding-bottom: 150px;
+  flex-wrap: wrap;
 }
 
 .filterRow {

@@ -13,7 +13,9 @@ export default function ListSearch({ onFilterClick, searchValue, onSearchChange 
         Suodata
       </button>
       <div className={styles.searchBar}>
-        <span className={styles.searchIcon}>🔍</span>
+        {!searchValue && (
+          <span className={styles.searchIcon}>🔍</span>
+        )}
         <input
           className={styles.searchInput}
           type="text"
