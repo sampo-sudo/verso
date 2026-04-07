@@ -6,7 +6,7 @@ import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 
-import TopBar from "../../components/TopBar/TopBar";
+import MapSearch from "../../components/MapSearch/MapSearch";
 import BottomToggle from "../../components/BottomToggle/BottomToggle";
 import CertBadges from "../../components/CertBadges/CertBadges";
 import { useFilters } from "../../context/FilterContext";
@@ -23,9 +23,18 @@ L.Icon.Default.mergeOptions({
 
 const allShops: Shop[] = shops as Shop[];
 
+const createCustomIcon = (shopName: string) => {
+  return L.divIcon({
+    html: `<div class="${styles.customMarker}"><img src="${markerIcon}" alt="marker" class="${styles.markerIcon}" /><span class="${styles.markerText}">${shopName}</span></div>`,
+    className: 'custom-div-icon',
+    iconSize: [50, 40],
+    iconAnchor: [12, 41],
+  });
+};
+
 export default function MapView() {
   const navigate = useNavigate();
-  const { filters, setFilters } = useFilters();
+  const { filters } = useFilters();
 
   const filteredShops = allShops.filter((shop) => {
     if (
@@ -33,24 +42,19 @@ export default function MapView() {
       !shop.name.toLowerCase().includes(filters.searchQuery.toLowerCase()) ||
       filters.certifications.some((cert) => !shop.certifications.includes(cert)) ||
       !(shop.priceLevel <= filters.maxPrice) ||
-      !(shop.rating >= filters.minRating)
+      !(shop.rating >= filters.minRating) ||
+      filters.clothes.some((c) => !shop.clothes.includes(c))
     ) {
       return false;
     }
     return true;
   });
 
-  const handleSearchChange = (value: string) => {
-    setFilters((prev) => ({ ...prev, searchQuery: value }));
-  };
-
   return (
     <div className={styles.container}>
       <div className={styles.topBarWrapper}>
-        <TopBar
-          onFilterClick={() => navigate("/filter")}
-          searchValue={filters.searchQuery}
-          onSearchChange={handleSearchChange}
+        <MapSearch
+          onButtonClick={() => navigate("/filter")}
         />
       </div>
 
@@ -68,10 +72,11 @@ export default function MapView() {
           <Marker
             key={shop.id}
             position={[shop.coordinates.lat, shop.coordinates.lng]}
+            icon={createCustomIcon(shop.name)}
           >
             <Popup>
               <div className={styles.popupName}>{shop.name}</div>
-              <CertBadges certifications={shop.certifications} size="sm" />
+              <CertBadges certifications={shop.certifications} size="md" />
               <Link to={`/shop/${shop.id}`} className={styles.popupLink}>
                 Näytä kauppa
               </Link>

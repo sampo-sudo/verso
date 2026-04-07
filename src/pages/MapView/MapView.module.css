@@ -41,3 +41,26 @@
   font-size: 0.875rem;
   text-decoration: underline;
 }
+
+.markerText {
+  margin-left: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #004aaa;
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.83);
+  padding: 1px 4px;
+  border-radius: 4px;
+}
+
+.customMarker {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.markerIcon {
+  width: 25px;
+  height: 41px;
+  flex-shrink: 0;
+}

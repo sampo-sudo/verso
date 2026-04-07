@@ -18,7 +18,7 @@ export default function BackButton({ onClick }: BackButtonProps) {
 
   return (
     <button className={styles.backButton} onClick={handleClick} aria-label="Takaisin">
-      &lt;
+      &larr;
     </button>
   );
 }

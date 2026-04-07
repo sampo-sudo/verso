@@ -11,6 +11,13 @@ import styles from "./ShopDetail.module.css";
 
 const allShops: Shop[] = shops as Shop[];
 const allBrands: Brand[] = brands as Brand[];
+const allClothes = [
+  { "id": "juhalvaatteet", "name": "Juhalvaatteet"},
+  { "id": "urheilu", "name": "Urheilu"},
+  { "id": "lasten", "name": "Lasten"},
+  { "id": "naisten", "name": "Naisten"},
+  { "id": "miesten", "name": "Miesten"},
+];
 
 export default function ShopDetail() {
   const { id } = useParams<{ id: string }>();
@@ -68,6 +75,16 @@ export default function ShopDetail() {
         <Link to={`/shop/${shop.id}/brands`} className={styles.brandArrow}>
           &gt;
         </Link>
+      </div>
+
+      <h2 className={styles.sectionHeader}>Vaatekategoriat</h2>
+      <div className={styles.brandsRow}>
+        <span className={styles.brandNames}>
+          {shop.clothes.map((cId) => {
+            const cloth = allClothes.find((c) => c.id === cId);
+            return cloth ? cloth.name : "";
+          }).join(", ")}
+        </span>
       </div>
 
       <h2 className={styles.sectionHeader}>Arvostelut</h2>

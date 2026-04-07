@@ -1,4 +1,4 @@
-import styles from "./TopBar.module.css";
+import styles from "./ListSearch.module.css";
 
 interface TopBarProps {
   onFilterClick: () => void;
@@ -6,11 +6,11 @@ interface TopBarProps {
   onSearchChange: (value: string) => void;
 }
 
-export default function TopBar({ onFilterClick, searchValue, onSearchChange }: TopBarProps) {
+export default function ListSearch({ onFilterClick, searchValue, onSearchChange }: TopBarProps) {
   return (
     <div className={styles.topBar}>
       <button className={styles.filterButton} onClick={onFilterClick} aria-label="Takaisin">
-        &larr;
+        Suodata
       </button>
       <div className={styles.searchBar}>
         <span className={styles.searchIcon}>🔍</span>

@@ -12,12 +12,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .infoButton {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: var(--navy);
   color: var(--white);
@@ -32,6 +32,11 @@
 
 .section {
   margin-bottom: 1.5rem;
+}
+
+.toggleSection {
+  display: flex;
+  gap: 0.5rem;
 }
 
 .filterRow {
@@ -73,6 +78,52 @@
 }
 
 .checkbox.checked {
+  background: var(--navy);
+}
+
+.toggleRow {
+  display: flex;
+  max-width: 400px;
+  align-items: center;
+  border: 2px solid var(--navy);
+  border-radius: 30px;
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: rgba(236, 236, 236, 0.551);
+  transition: background 0.15s, color 0.15s;
+}
+
+.toggleRow:hover {
+  background-color: rgb(188, 188, 188);
+}
+
+.toggleRow.checked {
+  background: var(--navy);
+  color: var(--white);
+}
+
+.clothesLabel {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--navy);
+}
+
+.clothesLabel.checked {
+  color: var(--white);
+}
+
+.clothesCheck {
+  width: 0px;
+  height: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.15s;
+}
+
+.clothesCheck.checked {
+  width: 24px;
   background: var(--navy);
 }
 
@@ -142,4 +193,51 @@
 .footer {
   margin-top: auto;
   padding: 1rem 0;
+}
+
+.bottomContainer {
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  gap: 0;
+  border-radius: 999px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.clearButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 28px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+
+.applyButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 28px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  background-color: var(--navy);
+  transition: background 0.15s, color 0.15s;
+}
+
+.applyButton:hover {
+  background-color: var(--navy-light);
 }

@@ -12,7 +12,7 @@ export default function BottomToggle({ activeView }: BottomToggleProps) {
         to="/map"
         className={`${styles.toggleButton} ${activeView === "map" ? styles.active : styles.inactive}`}
       >
-        <span className={styles.icon}>📖</span>
+        <span className={styles.icon}>🗺️</span>
         Kartta
       </Link>
       <Link

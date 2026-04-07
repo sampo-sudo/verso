@@ -11,6 +11,7 @@ export interface Shop {
   coordinates: { lat: number; lng: number };
   brands: string[];
   reviews: Review[];
+  clothes: string[];
 }
 
 export interface Review {
@@ -28,6 +29,7 @@ export interface Brand {
 
 export interface FilterState {
   searchQuery: string;
+  clothes: string[];
   certifications: string[];
   maxPrice: number;
   minRating: number;

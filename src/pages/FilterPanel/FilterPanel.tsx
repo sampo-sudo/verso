@@ -11,6 +11,14 @@ const FILTER_ROWS = [
   { key: "working", label: "Kestävät työolot", color: "#FFD700", icon: "\uD83D\uDCAA" },
 ];
 
+const CLOTHES_TOGGLES = [
+  { key: "juhalvaatteet", label: "Juhalvaatteet" },
+  { key: "urheilu", label: "Urheilu" },
+  { key: "lasten", label: "Lasten" },
+  { key: "naisten", label: "Naisten" },
+  { key: "miesten", label: "Miesten" },
+];
+
 export default function FilterPanel() {
   const navigate = useNavigate();
   const { filters, setFilters } = useFilters();
@@ -28,6 +36,16 @@ export default function FilterPanel() {
     });
   };
 
+  const toggleClothes = (key: string) => {
+    setFilters((prev) => {
+      const clothes = prev.clothes.includes(key)
+        ? prev.clothes.filter((c) => c !== key)
+        : [...prev.clothes, key];
+      return { ...prev, clothes: clothes };
+    });
+  };
+
+
   const handlePriceChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFilters((prev) => ({ ...prev, maxPrice: Number(e.target.value) }));
   };
@@ -35,6 +53,17 @@ export default function FilterPanel() {
   const handleRatingChange = (rating: number) => {
     setFilters((prev) => ({ ...prev, minRating: rating }));
   };
+
+  const resetFilters = () => {
+    setFilters({
+      searchQuery: "",
+      clothes: [],
+      certifications: [],
+      maxPrice: 5,
+      minRating: 1
+    });
+  };
+
 
   return (
     <div className={styles.container}>
@@ -107,6 +136,43 @@ export default function FilterPanel() {
           />
         </div>
       </div>
+      <div className={styles.section}>
+        <div className={styles.sectionLabel}>Vaatekategoriat</div>
+
+      
+        <div className={styles.toggleSection}>
+          
+          {CLOTHES_TOGGLES.map((row) => {
+            const checked = filters.clothes.includes(row.key);
+            return (
+              <div
+                key={row.key}
+                className={`${styles.toggleRow} ${checked ? styles.checked : ""}`}
+                onClick={() => toggleClothes(row.key)}
+              >
+                <div
+                  className={`${styles.clothesCheck} ${checked ? styles.checked : ""}`}
+                >
+                  {checked && <span className={styles.checkmark}>✓</span>}
+                </div>
+                <span className={`${styles.clothesLabel} ${checked ? styles.checked : ""}`}>{row.label}</span>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className={styles.bottomWrapper}>
+        <div className={styles.bottomContainer}>
+          <button className={styles.clearButton} onClick={resetFilters} aria-label="Reset">
+            Reset Filters
+          </button>
+          <button className={styles.applyButton} onClick={() => navigate(-1)} aria-label="Apply">
+            Apply Filters
+          </button>
+        </div>
+      </div>
+
     </div>
   );
 }

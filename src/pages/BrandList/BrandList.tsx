@@ -43,7 +43,7 @@ export default function BrandList() {
       {shopBrands.map((brand) => (
         <div key={brand.id} className={styles.brandRow}>
           <span className={styles.brandName}>{brand.name}</span>
-          <CertBadges certifications={brand.certifications} size="sm" />
+          <CertBadges certifications={brand.certifications} size="md" />
         </div>
       ))}
     </div>

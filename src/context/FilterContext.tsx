@@ -4,6 +4,7 @@ import type { FilterState } from "../data/types";
 const defaultFilters: FilterState = {
   searchQuery: "",
   certifications: [],
+  clothes: [],
   maxPrice: 5,
   minRating: 1,
 };

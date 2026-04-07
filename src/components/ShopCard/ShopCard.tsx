@@ -19,7 +19,7 @@ export default function ShopCard({ shop }: ShopCardProps) {
           <PriceLevel level={shop.priceLevel} />
           <span className={styles.distance}>{shop.distance}</span>
         </div>
-        <CertBadges certifications={shop.certifications} size="sm" />
+        <CertBadges certifications={shop.certifications} size="md" />
       </div>
       <span className={styles.arrow}>&gt;</span>
     </Link>
