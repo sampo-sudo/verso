@@ -71,7 +71,7 @@
   justify-content: center;
   cursor: pointer;
   font-size: 1.8rem;
-  font-weight: 700;
+  cursor: pointer;
   color: var(--navy);
   flex-shrink: 0;
 }
