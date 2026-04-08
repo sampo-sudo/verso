@@ -12,7 +12,7 @@ const FILTER_ROWS = [
 ];
 
 const CLOTHES_TOGGLES = [
-  { key: "juhalvaatteet", label: "Juhalvaatteet" },
+  { key: "juhlavaatteet", label: "Juhlavaatteet" },
   { key: "urheilu", label: "Urheilu" },
   { key: "lasten", label: "Lasten" },
   { key: "naisten", label: "Naisten" },

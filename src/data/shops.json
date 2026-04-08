@@ -31,7 +31,7 @@
     "address": "Urho Kekkosen polku 67",
     "coordinates": { "lat": 60.16842, "lng": 24.9318 },
     "brands": ["haglofs", "reima", "veja", "ensenn"],
-    "clothes": ["juhalvaatteet", "lasten", "naisten", "miesten"],
+    "clothes": ["juhlavaatteet", "lasten", "naisten", "miesten"],
     "reviews": [
       { "id": "r5", "author": "Arttu Ahma", "rating": 5, "text": "Paras kauppa ikinä!!\ud83d\ude0d\ud83d\ude0d Löysin mun unelmatakin täältä" },
       { "id": "r6", "author": "Kiia Käärme", "rating": 4, "text": "Hyvä palvelu ja löytyy paljon suomalaisia tuotteita\ud83c\uddeb\ud83c\uddee" },
@@ -51,7 +51,7 @@
     "address": "Siin kelan takana u know",
     "coordinates": { "lat": 60.17215, "lng": 24.94496 },
     "brands": ["haglofs", "reima", "veja", "ensenn"],
-    "clothes": ["juhalvaatteet", "urheilu", "naisten", "miesten"],
+    "clothes": ["juhlavaatteet", "urheilu", "naisten", "miesten"],
     "reviews": [
       { "id": "r9", "author": "Timo Tikka", "rating": 5, "text": "Tosi kiva kauppa, ikinä en oo näin hyvää palvelua saanut missään!\ud83d\ude01\ud83e\udea3\ud83d\udd25" },
       { "id": "r10", "author": "Aino Ankka", "rating": 5, "text": "Täältä löytyy parhaat kestävät vaatteet\ud83d\ude0d\ud83d\ude0d\ud83d\udd25\ud83d\udd25" },
@@ -95,7 +95,7 @@
     "address": "Pikkukakkosen posti 347",
     "coordinates": { "lat": 60.16587, "lng": 24.9421 },
     "brands": ["haglofs", "reima", "veja", "ensenn"],
-    "clothes": ["juhalvaatteet", "miesten", "naisten"],
+    "clothes": ["juhlavaatteet", "miesten", "naisten"],
     "reviews": [
       { "id": "r21", "author": "Sun faija", "rating": 3, "text": "Omistaja jotenki vähän tärähtäny mutta hyvät nahkahousut sain kuitenkin..." },
       { "id": "r22", "author": "Jussi Jänis", "rating": 5, "text": "Täältä löytyy parhaat kestävät farkut ja villapaidat \ud83d\ude0d\ud83d\ude0d\ud83d\udd25\ud83d\udd25" },

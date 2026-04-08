@@ -12,7 +12,7 @@ import styles from "./ShopDetail.module.css";
 const allShops: Shop[] = shops as Shop[];
 const allBrands: Brand[] = brands as Brand[];
 const allClothes = [
-  { "id": "juhalvaatteet", "name": "Juhalvaatteet"},
+  { "id": "juhlavaatteet", "name": "Juhlavaatteet"},
   { "id": "urheilu", "name": "Urheilu"},
   { "id": "lasten", "name": "Lasten"},
   { "id": "naisten", "name": "Naisten"},
