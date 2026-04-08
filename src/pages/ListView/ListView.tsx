@@ -25,7 +25,7 @@ export default function ListView() {
       return false;
     }
     return true;
-  });
+  }).sort((a, b) => a.distanceMeters - b.distanceMeters);
 
   const handleSearchChange = (value: string) => {
     setFilters((prev) => ({ ...prev, searchQuery: value }));

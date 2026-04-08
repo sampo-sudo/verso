@@ -23,6 +23,15 @@ L.Icon.Default.mergeOptions({
 
 const allShops: Shop[] = shops as Shop[];
 
+const YOU_ARE_HERE: [number, number] = [60.169757482713855, 24.934249842494697];
+
+const youAreHereIcon = L.divIcon({
+  html: `<div class="${styles.youAreHere}"><div class="${styles.youAreHerePulse}"></div><div class="${styles.youAreHereDot}"></div></div>`,
+  className: "",
+  iconSize: [24, 24],
+  iconAnchor: [12, 12],
+});
+
 const createCustomIcon = (shopName: string) => {
   return L.divIcon({
     html: `<div class="${styles.customMarker}"><img src="${markerIcon}" alt="marker" class="${styles.markerIcon}" /><span class="${styles.markerText}">${shopName}</span></div>`,
@@ -68,6 +77,7 @@ export default function MapView() {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
+        <Marker position={YOU_ARE_HERE} icon={youAreHereIcon} interactive={false} />
         {filteredShops.map((shop) => (
           <Marker
             key={shop.id}
