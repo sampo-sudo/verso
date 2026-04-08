@@ -16,10 +16,12 @@ export default function CertBadges({ certifications, size = "sm" }: CertBadgesPr
           <span
             key={key}
             className={`${styles.badge} ${styles[size]}`}
-            style={{ backgroundColor: cert.color }}
+            style={size === "sm" ? { backgroundColor: cert.color } : undefined}
             title={cert.label}
           >
-            {size !== "sm" && cert.icon}
+            {size !== "sm" && (
+              <img src={cert.icon} alt={cert.label} className={styles.iconImg} />
+            )}
           </span>
         );
       })}

@@ -22,12 +22,11 @@ export default function InfoPage() {
         const cert = CERTIFICATIONS[key];
         return (
           <div key={key} className={styles.certSection}>
-            <div
+            <img
               className={styles.certIcon}
-              style={{ backgroundColor: cert.color }}
-            >
-              {cert.icon}
-            </div>
+              src={cert.icon}
+              alt={cert.label}
+            />
             <div className={styles.certContent}>
               <div className={styles.certLabel}>{cert.label}</div>
               <p className={styles.certDescription}>{cert.description}</p>

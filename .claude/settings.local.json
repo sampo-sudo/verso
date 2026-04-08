@@ -4,7 +4,20 @@
       "Bash(npm create:*)",
       "Bash(cd /tmp)",
       "Bash(rm -rf verso-scaffold)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(npm i:*)",
+      "Bash(npx playwright:*)",
+      "Bash(TARGET_PATH=\"/\" npx playwright test e2e/screenshot.spec.ts)",
+      "Bash(rm -rf test-results)",
+      "Bash(TARGET_PATH=\"/\" npx playwright test e2e/screenshot.spec.ts --reporter=line)",
+      "Bash(TARGET_PATH=home npx playwright test e2e/screenshot.spec.ts)",
+      "Bash(TARGET_PATH=map npx playwright test e2e/screenshot.spec.ts)",
+      "Bash(TARGET_PATH=list npx playwright test e2e/screenshot.spec.ts)",
+      "Bash(TARGET_PATH=filter npx playwright test e2e/screenshot.spec.ts)",
+      "Bash(TARGET_PATH=info npx playwright test e2e/screenshot.spec.ts)",
+      "Bash(npx vercel:*)",
+      "WebSearch",
+      "WebFetch(domain:www.namecheap.com)"
     ]
   }
 }

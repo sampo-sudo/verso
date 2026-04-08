@@ -2,13 +2,14 @@ import { useNavigate } from "react-router-dom";
 import TopBar from "../../components/TopBar/TopBar";
 import StarRating from "../../components/StarRating/StarRating";
 import { useFilters } from "../../context/FilterContext";
+import { CERTIFICATIONS } from "../../data/certifications";
 import styles from "./FilterPanel.module.css";
 
 const FILTER_ROWS = [
-  { key: "vegan", label: "Vegaaninen", color: "#FFB6C1", icon: "\uD83D\uDC30" },
-  { key: "finnish", label: "Kotimainen", color: "#4A90D9", icon: "\uD83C\uDDEB\uD83C\uDDEE" },
-  { key: "materials", label: "Kestävät materiaalit", color: "#4CAF50", icon: "\uD83C\uDF33" },
-  { key: "working", label: "Kestävät työolot", color: "#FFD700", icon: "\uD83D\uDCAA" },
+  { key: "vegan", label: "Vegaaninen" },
+  { key: "finnish", label: "Kotimainen" },
+  { key: "materials", label: "Kestävät materiaalit" },
+  { key: "working", label: "Kestävät työolot" },
 ];
 
 const CLOTHES_TOGGLES = [
@@ -91,12 +92,11 @@ export default function FilterPanel() {
               className={styles.filterRow}
               onClick={() => toggleCert(row.key)}
             >
-              <div
+              <img
                 className={styles.iconCircle}
-                style={{ backgroundColor: row.color }}
-              >
-                {row.icon}
-              </div>
+                src={CERTIFICATIONS[row.key].icon}
+                alt={row.label}
+              />
               <span className={styles.filterLabel}>{row.label}</span>
               <div
                 className={`${styles.checkbox} ${checked ? styles.checked : ""}`}
