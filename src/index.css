@@ -1,15 +1,15 @@
 :root {
-  --pink: #FFB6C1;
-  --pink-light: #FFF0F3;
-  --pink-medium: #FFCDD6;
-  --navy: #003366;
-  --navy-light: #004488;
+  --pink: #FFD7F7;
+  --pink-light: #FFF2FD;
+  --pink-medium: #FFE4FA;
+  --navy: #003786;
+  --navy-light: #0048A8;
   --white: #FFFFFF;
   --gray-light: #F5F5F5;
   --gray: #E0E0E0;
-  --cert-vegan: #FFB6C1;
+  --cert-vegan: #FFD7F7;
   --cert-working: #FFD700;
-  --cert-finnish: #4A90D9;
+  --cert-finnish: #003786;
   --cert-materials: #4CAF50;
   --font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
   --radius: 16px;

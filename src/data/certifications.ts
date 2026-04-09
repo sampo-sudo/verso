@@ -15,7 +15,7 @@ export const CERTIFICATIONS: Record<string, Certification> = {
   vegan: {
     key: "vegan",
     label: "Vegaaninen",
-    color: "#F096D3",
+    color: "#FFD7F7",
     icon: veganIcon,
     description:
       "Tuotteita tai raaka-aineita ei ole testattu eläimillä missään tuotantoketjun vaiheessa. Valinta, joka kunnioittaa kaikkia eläviä olentoja.",
@@ -31,7 +31,7 @@ export const CERTIFICATIONS: Record<string, Certification> = {
   finnish: {
     key: "finnish",
     label: "Suomalainen läpi linjan",
-    color: "#1F6AD5",
+    color: "#003786",
     icon: finnishIcon,
     description:
       "Suunnittelu, materiaalit ja valmistus – kaikki tai suurin osa on suomalaista alkuperää. Tukee kotimaista työtä ja lyhyitä toimitusketjuja.",

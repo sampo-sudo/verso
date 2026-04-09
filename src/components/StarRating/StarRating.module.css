@@ -5,7 +5,7 @@
 }
 
 .star {
-  color: var(--pink);
+  color: #F096D3;
   cursor: default;
   user-select: none;
 }

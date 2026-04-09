@@ -25,7 +25,7 @@ export default function StarRating({
     <span
       className={`${styles.container} ${styles[size]} ${interactive ? styles.interactive : ""}`}
     >
-      {[1, 2, 3, 4, 5].map((star) => (
+      {(interactive ? [1, 2, 3, 4, 5] : Array.from({ length: rounded }, (_, i) => i + 1)).map((star) => (
         <span
           key={star}
           className={`${styles.star} ${star > rounded ? styles.empty : ""}`}
