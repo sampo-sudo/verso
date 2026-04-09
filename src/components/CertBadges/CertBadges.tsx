@@ -3,12 +3,13 @@ import styles from "./CertBadges.module.css";
 
 interface CertBadgesProps {
   certifications: string[];
-  size?: "sm" | "md" | "lg";
+  size?: "sm" | "popup" | "md" | "lg";
+  noWrap?: boolean;
 }
 
-export default function CertBadges({ certifications, size = "sm" }: CertBadgesProps) {
+export default function CertBadges({ certifications, size = "sm", noWrap = false }: CertBadgesProps) {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${noWrap ? styles.noWrap : ""}`}>
       {certifications.map((key) => {
         const cert = CERTIFICATIONS[key];
         if (!cert) return null;

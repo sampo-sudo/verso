@@ -5,6 +5,10 @@
   flex-wrap: wrap;
 }
 
+.noWrap {
+  flex-wrap: nowrap;
+}
+
 .badge {
   border-radius: 50%;
   display: flex;
@@ -16,6 +20,12 @@
   width: 20px;
   height: 20px;
   font-size: 0;
+}
+
+.popup {
+  width: 32px;
+  height: 32px;
+  font-size: 0.9rem;
 }
 
 .md {

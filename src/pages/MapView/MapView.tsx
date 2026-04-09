@@ -21,6 +21,18 @@ L.Icon.Default.mergeOptions({
   shadowUrl: markerShadow,
 });
 
+const shopImages = import.meta.glob<{ default: string }>(
+  "../../assets/shops/*.jpg",
+  { eager: true }
+);
+
+function getShopImage(shopId: string): string | undefined {
+  const match = Object.entries(shopImages).find(([path]) =>
+    path.endsWith(`/${shopId}.jpg`)
+  );
+  return match?.[1].default;
+}
+
 const allShops: Shop[] = shops as Shop[];
 
 const YOU_ARE_HERE: [number, number] = [60.169757482713855, 24.934249842494697];
@@ -86,7 +98,14 @@ export default function MapView() {
           >
             <Popup>
               <div className={styles.popupName}>{shop.name}</div>
-              <CertBadges certifications={shop.certifications} size="md" />
+              {getShopImage(shop.id) && (
+                <img
+                  src={getShopImage(shop.id)}
+                  alt={shop.name}
+                  className={styles.popupImage}
+                />
+              )}
+              <CertBadges certifications={shop.certifications} size="popup" noWrap />
               <Link to={`/shop/${shop.id}`} className={styles.popupLink}>
                 Näytä kauppa
               </Link>
