@@ -9,6 +9,26 @@ import brands from "../../data/brands.json";
 import type { Shop, Brand } from "../../data/types";
 import styles from "./ShopDetail.module.css";
 
+const shopImages = import.meta.glob<{ default: string }>(
+  "../../assets/shops/*.jpg",
+  { eager: true }
+);
+
+function getShopUrl(name: string): string {
+  return name
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\s+/g, "") + ".fi";
+}
+
+function getShopImage(shopId: string): string | undefined {
+  const match = Object.entries(shopImages).find(([path]) =>
+    path.endsWith(`/${shopId}.jpg`)
+  );
+  return match?.[1].default;
+}
+
 const allShops: Shop[] = shops as Shop[];
 const allBrands: Brand[] = brands as Brand[];
 const allClothes = [
@@ -24,6 +44,7 @@ export default function ShopDetail() {
   const navigate = useNavigate();
 
   const shop = allShops.find((s) => s.id === id);
+  const shopImage = id ? getShopImage(id) : undefined;
 
   if (!shop) {
     return <div className={styles.container}>Kauppaa ei löytynyt.</div>;
@@ -55,6 +76,28 @@ export default function ShopDetail() {
         <PriceLevel level={shop.priceLevel} />
       </div>
       <div className={styles.address}>{shop.address}</div>
+
+      {shopImage && (
+        <img
+          src={shopImage}
+          alt={shop.name}
+          className={styles.shopImage}
+        />
+      )}
+
+      <a
+        href={`https://${getShopUrl(shop.name)}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.websiteLink}
+      >
+        <svg className={styles.globeIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M2 12h20" />
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+        </svg>
+        {getShopUrl(shop.name)}
+      </a>
 
       <div className={styles.certRow}>
         <CertBadges certifications={shop.certifications} size="md" />

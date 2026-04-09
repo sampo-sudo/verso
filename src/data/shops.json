@@ -10,7 +10,7 @@
     "certifications": ["vegan", "working", "finnish", "materials"],
     "address": "Pikkukakkosen posti 347",
     "coordinates": { "lat": 60.16983505427979, "lng": 24.939357815476694 },
-    "brands": ["haglofs", "reima", "veja", "ensenn", "luhta"],
+    "brands": ["haglofs", "reima", "veja", "gugguu", "luhta"],
     "clothes": ["urheilu", "lasten", "naisten", "miesten"],
     "reviews": [
       { "id": "r1", "author": "Maija Mehiläinen", "rating": 5, "text": "Tosi kiva kauppa, ikinä en oo näin hyvää palvelua saanut missään!\ud83d\ude01\ud83e\udea3\ud83d\udd25" },
@@ -30,7 +30,7 @@
     "certifications": ["vegan", "finnish"],
     "address": "Urho Kekkosen polku 67",
     "coordinates": { "lat": 60.16842, "lng": 24.9318 },
-    "brands": ["haglofs", "reima", "veja", "ensenn"],
+    "brands": ["haglofs", "reima", "veja", "gugguu"],
     "clothes": ["juhlavaatteet", "lasten", "naisten", "miesten"],
     "reviews": [
       { "id": "r5", "author": "Arttu Ahma", "rating": 5, "text": "Paras kauppa ikinä!!\ud83d\ude0d\ud83d\ude0d Löysin mun unelmatakin täältä" },
@@ -50,7 +50,7 @@
     "certifications": ["finnish", "materials"],
     "address": "Siin kelan takana u know",
     "coordinates": { "lat": 60.17215, "lng": 24.94496 },
-    "brands": ["haglofs", "reima", "veja", "ensenn"],
+    "brands": ["haglofs", "reima", "veja", "gugguu"],
     "clothes": ["juhlavaatteet", "urheilu", "naisten", "miesten"],
     "reviews": [
       { "id": "r9", "author": "Timo Tikka", "rating": 5, "text": "Tosi kiva kauppa, ikinä en oo näin hyvää palvelua saanut missään!\ud83d\ude01\ud83e\udea3\ud83d\udd25" },
@@ -70,7 +70,7 @@
     "certifications": ["vegan", "working"],
     "address": "Urheilukatu 22",
     "coordinates": { "lat": 60.1740, "lng": 24.9284 },
-    "brands": ["haglofs", "reima", "veja", "ensenn"],
+    "brands": ["haglofs", "reima", "veja", "gugguu"],
     "clothes": ["urheilu", "lasten", "miesten", "naisten"],
     "reviews": [
       { "id": "r13", "author": "Hanna Hamsteri", "rating": 5, "text": "Tosi kiva kauppa\ud83d\ude01\ud83e\udea3\ud83d\udd25" },
@@ -94,7 +94,7 @@
     "certifications": ["working", "finnish", "materials"],
     "address": "Pikkukakkosen posti 347",
     "coordinates": { "lat": 60.16587, "lng": 24.9421 },
-    "brands": ["haglofs", "reima", "veja", "ensenn"],
+    "brands": ["haglofs", "reima", "veja", "gugguu"],
     "clothes": ["juhlavaatteet", "miesten", "naisten"],
     "reviews": [
       { "id": "r21", "author": "Sun faija", "rating": 3, "text": "Omistaja jotenki vähän tärähtäny mutta hyvät nahkahousut sain kuitenkin..." },
@@ -114,7 +114,7 @@
     "certifications": ["vegan", "working", "finnish", "materials"],
     "address": "Pikkukakkosen posti 347",
     "coordinates": { "lat": 60.17089, "lng": 24.9304 },
-    "brands": ["haglofs", "reima", "veja", "ensenn"],
+    "brands": ["haglofs", "reima", "veja", "gugguu"],
     "clothes": ["urheilu", "naisten", "miesten"],
     "reviews": [
       { "id": "r25", "author": "Maija Mehiläinen", "rating": 5, "text": "Tosi kiva kauppa, ikinä en oo näin hyvää palvelua saanut missään!\ud83d\ude01\ud83e\udea3\ud83d\udd25" },

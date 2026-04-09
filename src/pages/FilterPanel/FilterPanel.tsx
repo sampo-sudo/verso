@@ -165,11 +165,11 @@ export default function FilterPanel() {
 
       <div className={styles.bottomWrapper}>
         <div className={styles.bottomContainer}>
-          <button className={styles.clearButton} onClick={resetFilters} aria-label="Reset">
-            Reset
+          <button className={styles.clearButton} onClick={resetFilters} aria-label="Tyhjennä">
+            Tyhjennä
           </button>
-          <button className={styles.applyButton} onClick={() => navigate(-1)} aria-label="Apply">
-            Apply
+          <button className={styles.applyButton} onClick={() => navigate(-1)} aria-label="Käytä">
+            Käytä
           </button>
         </div>
       </div>
