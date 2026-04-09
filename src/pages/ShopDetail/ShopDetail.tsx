@@ -115,8 +115,8 @@ export default function ShopDetail() {
         <span className={styles.brandNames}>
           {shopBrands.map((b) => b.name).join(", ")}
         </span>
-        <Link to={`/shop/${shop.id}/brands`} className={styles.brandArrow}>
-          &gt;
+        <Link to={`/shop/${shop.id}/brands`} className={styles.infoButton} aria-label="Näytä brändit">
+          i
         </Link>
       </div>
 

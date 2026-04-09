@@ -25,8 +25,10 @@ export default function RatingChart({ distribution, rating }: RatingChartProps) 
         })}
       </div>
       <div className={styles.starContainer}>
-        <span className={styles.bigStar}>★</span>
-        <span className={styles.ratingNumber}>{rating.toFixed(1)}</span>
+        <span className={styles.bigStar}>
+          ★
+          <span className={styles.ratingNumber}>{rating.toFixed(1)}</span>
+        </span>
       </div>
     </div>
   );
